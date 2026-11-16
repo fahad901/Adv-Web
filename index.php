@@ -1,0 +1,4 @@
+<?php require 'includes/layout.php';top('Welcome to NeoArcade'); ?>
+<section class="hero"><div><span class="tag">NEW • 3 GAMES LIVE</span><h2>YOUR NEXT<br>HIGH SCORE<br>STARTS HERE.</h2><p>Play quick mini-games, challenge your brain and climb the leaderboard in a vibrant neon arcade.</p><a class="btn" href="games.php">Explore games →</a></div><div class="hero-art">🎮✨</div></section>
+<h2>Featured games</h2><div class="cards"><?php game_card('tictactoe.php','❌','Tic-Tac-Toe','A quick two-player classic.');game_card('puzzle.php','🧩','Slide Puzzle','Put all nine tiles in order.');game_card('quiz.php','🧠','Quiz Challenge','Test your knowledge.');?></div>
+<h2>Why NeoArcade?</h2><div class="grid2"><div class="stat"><strong>3</strong>Playable mini-games</div><div class="stat"><strong>∞</strong>Replay potential</div></div><?php bottom(); ?>

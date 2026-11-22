@@ -1,1 +1,3 @@
-<?php require 'includes/layout.php';top('All Games'); ?><p>Choose a game and start playing instantly. Log in to save your scores.</p><div class="cards"><?php game_card('tictactoe.php','❌','Tic-Tac-Toe','Play X vs O.');game_card('puzzle.php','🧩','Sliding Puzzle','Solve the shuffled 3×3 grid.');game_card('quiz.php','🧠','Quiz Challenge','Five quick knowledge questions.');?></div><?php bottom(); ?>
+<?php require __DIR__ . '/layout.php'; top('Game Library'); ?>
+<p class="intro">Choose a game and jump straight in. Log in to save your scores and star your favourites.</p>
+<?php game_cards(true); bottom(); ?>

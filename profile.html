@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>User Profile | Gridline Arcade</title>
+        <link rel="stylesheet" href="assets/styles.css">
+        <script src="assets/app.js" defer></script>
+    </head>
+    <body data-page="profile"> <a class="skip" href="#main">Skip to content</a>
+        <header class="topbar">
+            <button id="menu" class="menu secondary" type="button" aria-label="Navigation menu"
+    aria-expanded="false" aria-controls="sidebar"><span class="menu-icon" aria-hidden="true"></span></button>
+            <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Gridline <b>Arcade</b></span></a>
+            <div class="top-actions" id="account-links"> <a class="" href="login.html">Log in</a> <a class="secondary register-link" href="register.html" aria-label="Create account"> <span class="desktop-label">Create account</span><span class="mobile-label" aria-hidden="true">Join</span> </a></div>
+        </header>
+        <div class="shell">
+            <aside id="sidebar" class="sidebar">
+                <nav aria-label="Main navigation">
+                    <div class="nav-group">
+                        <p>Discover</p>
+                        <a href="index.html"><span aria-hidden="true">⌂</span>Overview</a> <a href="games.html"><span aria-hidden="true">▦</span>Game library</a> <a href="leaderboard.html"><span aria-hidden="true">▤</span>Leaderboard</a> <a href="history.html"><span aria-hidden="true">◷</span>Game history</a></div>
+                    <div class="nav-group">
+                        <p>Games</p>
+                        <a href="tic-tac-toe.html"><span aria-hidden="true">×</span>Tic-Tac-Toe</a> <a href="slide-puzzle.html"><span aria-hidden="true">⊞</span>Slide Puzzle</a> <a href="quiz.html"><span aria-hidden="true">?</span>Quiz Challenge</a></div>
+                    <div class="nav-group">
+                        <p>Account</p>
+                        <a href="profile.html" aria-current="page"><span aria-hidden="true">◎</span>My profile</a> <a href="admin.html"><span aria-hidden="true">◇</span>Admin</a> <a href="about.html"><span aria-hidden="true">ⓘ</span>About &amp; contact</a></div>
+                </nav>
+            </aside>
+            <main id="main" tabindex="-1">
+                <header class="page-heading">
+                    <p class="category">Account</p>
+                    <h1>User Profile</h1>
+                </header>
+                <div class="panel profile" data-private>
+                    <div class="avatar" id="avatar" aria-hidden="true"></div>
+                    <div>
+                        <h2 id="profile-name">Loading profile…</h2>
+                        <p id="profile-email"></p>
+                        <p id="profile-bio"></p>
+                        <div class="actions"><a class="primary" href="edit-profile.html">Edit profile</a><a class="secondary" href="history.html">Game history</a>
+                            <button class="secondary" id="logout" type="button">Log out</button>
+                        </div>
+                        <p id="logout-message" class="message" role="status"></p>
+                    </div>
+                </div>
+                <footer><span>Gridline Arcade</span><a class="" href="about.html">About & contact</a></footer>
+            </main>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Leaderboard | Gridline Arcade</title>
+        <link rel="stylesheet" href="assets/styles.css">
+        <script src="assets/app.js" defer></script>
+    </head>
+    <body data-page="leaderboard"> <a class="skip" href="#main">Skip to content</a>
+        <header class="topbar">
+            <button id="menu" class="menu secondary" type="button" aria-label="Navigation menu"
+    aria-expanded="false" aria-controls="sidebar"><span class="menu-icon" aria-hidden="true"></span></button>
+            <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Gridline <b>Arcade</b></span></a>
+            <div class="top-actions" id="account-links"> <a class="" href="login.html">Log in</a> <a class="secondary register-link" href="register.html" aria-label="Create account"> <span class="desktop-label">Create account</span><span class="mobile-label" aria-hidden="true">Join</span> </a></div>
+        </header>
+        <div class="shell">
+            <aside id="sidebar" class="sidebar">
+                <nav aria-label="Main navigation">
+                    <div class="nav-group">
+                        <p>Discover</p>
+                        <a href="index.html"><span aria-hidden="true">⌂</span>Overview</a> <a href="games.html"><span aria-hidden="true">▦</span>Game library</a> <a href="leaderboard.html" aria-current="page"><span aria-hidden="true">▤</span>Leaderboard</a> <a href="history.html"><span aria-hidden="true">◷</span>Game history</a></div>
+                    <div class="nav-group">
+                        <p>Games</p>
+                        <a href="tic-tac-toe.html"><span aria-hidden="true">×</span>Tic-Tac-Toe</a> <a href="slide-puzzle.html"><span aria-hidden="true">⊞</span>Slide Puzzle</a> <a href="quiz.html"><span aria-hidden="true">?</span>Quiz Challenge</a></div>
+                    <div class="nav-group">
+                        <p>Account</p>
+                        <a href="profile.html"><span aria-hidden="true">◎</span>My profile</a> <a href="admin.html"><span aria-hidden="true">◇</span>Admin</a> <a href="about.html"><span aria-hidden="true">ⓘ</span>About &amp; contact</a></div>
+                </nav>
+            </aside>
+            <main id="main" tabindex="-1">
+                <header class="page-heading">
+                    <p class="category">Results</p>
+                    <h1>Leaderboard</h1>
+                </header>
+                <p class="intro">Compare top scores by game. For Slide Puzzle, fewer moves ranks higher.</p>
+                <div class="panel">
+                    <label class="inline-label">Game
+                        <select id="leader-game">
+                            <option value="tic-tac-toe">Tic-Tac-Toe</option>
+                            <option value="slide-puzzle">Slide Puzzle</option>
+                            <option value="quiz">Quiz Challenge</option>
+                        </select>
+                    </label>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Rank</th>
+                                    <th scope="col">Player</th>
+                                    <th scope="col">Result</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaders">
+                                <tr>
+                                    <td colspan="3">Loading scores…</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <footer><span>Gridline Arcade</span><a class="" href="about.html">About & contact</a></footer>
+            </main>
+        </div>
+    </body>
+</html>
